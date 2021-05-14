@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+
+  color: rgb(74, 110, 74);
+}
+
+section {
+  padding-top: 2rem;
+}
+
+.container,
+footer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+/*....styly pro menu......*/
+header {
+  padding: 1rem 0 1rem 0;
+  height: 6rem;
+  background-color: indianred;
+  position: fixed;
+  width: 100%;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-logo {
+  width: 7rem;
+  height: 5rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+nav {
+  width: 10rem;
+  padding: 1rem;
+  /*background-color: */
+}
+
+nav a {
+  display: block;
+  margin: 0.9rem;
+  /*color: */
+  border-bottom: 1px solid red; /*transparent*/
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  border-bottom: 1px solid pink;
+}
+
+.nav-closed {
+  /*display: none; */
+}
+
+/* .....styly pro hlavni text stranky */
+.intro {
+  padding-top: 5rem;
+}
+
+@media screen and (min-width: 780px) {
+  .container {
+    max-width: 960px;
+  }
+  .nav-btn {
+    display: none; /*pridano, aby pro velke sirky zmizel hamburger*/
+  }
+  .navigation {
+    flex-direction: row;
+  }
+  nav {
+    width: initial;
+  }
+  nav a {
+    display: inline-block;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .nav-closed {
+    display: block;
+  }
+}
+/* ....hamburger jen na mobilu...*/
+@media (max-width: 779px) {
+  .nav-btn {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    background-image: url('./img/menu.png');
+    background-size: contain;
+    cursor: pointer;
+  }
+  .nav-btn:focus {
+    outline: none;
+  }
+}
