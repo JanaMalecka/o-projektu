@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
   box-sizing: border-box;
   font-size: 1.1rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 *,
@@ -30,8 +32,8 @@ footer {
 
 /*....styly pro menu......*/
 header {
-  padding: 1rem 0 1rem 0;
-  height: 5.5rem;
+  padding: 0 0 1rem 0;
+  height: 5rem;
   background-color: indianred;
   position: fixed;
   width: 100%;
@@ -40,11 +42,16 @@ header {
 .topbar {
   display: flex;
   justify-content: space-between;
+  height: 4rem;
 }
 
 .site-logo {
-  width: 10rem;
+  max-width: 10rem;
   height: 5rem;
+  margin: 1.2rem;
+  align-items: center;
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
 .navigation {
@@ -65,7 +72,7 @@ nav a {
   /*color: */
   border-bottom: 1px solid red; /*transparent*/
   text-decoration: none;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 nav a:hover {
@@ -77,6 +84,12 @@ nav a:hover {
 }
 
 /* .....styly pro hlavni text stranky */
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
 .intro {
   padding-top: 5rem;
 }
