@@ -22,13 +22,16 @@ section {
 
 .container,
 footer {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /*....styly pro menu......*/
 header {
   padding: 1rem 0 1rem 0;
-  height: 6rem;
+  height: 5.5rem;
   background-color: indianred;
   position: fixed;
   width: 100%;
@@ -40,7 +43,7 @@ header {
 }
 
 .site-logo {
-  width: 7rem;
+  width: 10rem;
   height: 5rem;
 }
 
@@ -80,6 +83,9 @@ nav a:hover {
 
 @media screen and (min-width: 681px) {
   .container {
+    max-width: 960px;
+  }
+  footer {
     max-width: 960px;
   }
   .nav-btn {
