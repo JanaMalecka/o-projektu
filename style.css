@@ -4,6 +4,8 @@ html {
   box-sizing: border-box;
   font-size: 1.1rem;
   font-family: 'Roboto', sans-serif;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 *,
@@ -14,8 +16,28 @@ html {
 
 body {
   margin: 0;
-
+  background: linear-gradient(
+    -45deg,
+    rgb(137, 163, 247),
+    rgb(132, 165, 207),
+    rgb(230, 168, 243),
+    rgb(197, 216, 245)
+  );
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
   color: rgb(74, 110, 74);
+}
+/* styly pro animovane pozadi */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 section {
