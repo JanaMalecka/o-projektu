@@ -69,7 +69,7 @@ footer {
 .site-logo {
   max-width: 10rem;
   height: 5rem;
-  margin: 1.2rem;
+  margin: 1rem;
   align-items: center;
   font-weight: 900;
   font-size: 1.2rem;
@@ -95,6 +95,7 @@ nav a {
   color: rgb(21, 24, 21);
   z-index: 1;
   letter-spacing: 1px;
+  font-weight: 700;
   /*color: */
   /*border-bottom: 1px solid #d07dee; /*/ /*transparent*/
   text-decoration: none;
@@ -119,14 +120,14 @@ nav a::before {
   transition: 0.5s;
 }
 nav:hover a::before {
-  transform: skewX(45deg) translateX(200%); /* ale aplikuje se na vsechny najednou...!*/
+  transform: skewX(45deg) translateX(200%); /* ale aplikuje se na vsechny najednou...!?*/
 }
 
 .nav-closed {
   display: none;
 }
 
-/* .....styly pro hlavni text stranky */
+/* .....styly pro hlavni text stranky.................. */
 h1 {
   font-size: 1.5rem;
 }
@@ -177,4 +178,8 @@ h2 {
   .nav-btn:focus {
     outline: none;
   }
+}
+/*.................zapati......................*/
+footer {
+  padding-top: 4rem;
 }
