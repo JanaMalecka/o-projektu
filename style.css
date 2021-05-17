@@ -25,7 +25,7 @@ body {
   );
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
-  color: rgb(74, 110, 74);
+  color: rgb(21, 24, 21);
 }
 /* styly pro animovane pozadi */
 @keyframes gradient {
@@ -41,10 +41,11 @@ body {
 }
 
 section {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .container,
+header,
 footer {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -53,18 +54,16 @@ footer {
 }
 
 /*....styly pro menu......*/
-header {
-  padding: 0 0 1rem 0;
-  height: 5rem;
-  background-color: indianred;
-  position: fixed;
-  width: 100%;
-}
-
 .topbar {
   display: flex;
+  padding: 0 0 1rem 0;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
   height: 4rem;
+  border-radius: 8px;
+  /*background-color: rgb(137, 163, 247);*/
+  /*box-shadow: 0 15px 35px rgb(0, 0, 0, 0.2);*/
 }
 
 .site-logo {
@@ -74,6 +73,7 @@ header {
   align-items: center;
   font-weight: 900;
   font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .navigation {
@@ -84,21 +84,42 @@ header {
 
 nav {
   width: 10rem;
-  padding: 1rem;
-  /*background-color: */
+  padding: 0rem;
 }
 
 nav a {
   display: block;
-  margin: 0.9rem;
+  margin: 1rem;
+  border-radius: 5px 0 5px 0;
+  padding: 0.5rem;
+  color: rgb(21, 24, 21);
+  z-index: 1;
+  letter-spacing: 1px;
   /*color: */
-  border-bottom: 1px solid red; /*transparent*/
+  /*border-bottom: 1px solid #d07dee; /*/ /*transparent*/
   text-decoration: none;
+  overflow: hidden;
   /*text-transform: uppercase;*/
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  /*transition: 0.5s; /*vyskoci z leva*/
+  backdrop-filter: blur(15px);
 }
-
 nav a:hover {
   border-bottom: 1px solid pink;
+}
+nav a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45) translateX(0);
+  transition: 0.5s;
+}
+nav:hover a::before {
+  transform: skewX(45deg) translateX(200%); /* ale aplikuje se na vsechny najednou...!*/
 }
 
 .nav-closed {
