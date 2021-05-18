@@ -134,8 +134,29 @@ h1 {
 h2 {
   font-size: 1.2rem;
 }
-.intro {
-  padding-top: 5rem;
+
+.container__intro {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 10px 0 10px 0;
+  z-index: 1;
+  /* outline: 1px solid red; */
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+}
+
+.container__intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  transform: skewX(45) translateX(0);
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 681px) {
