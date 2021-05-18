@@ -159,6 +159,7 @@ h2 {
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(15px);
+  text-align: justify;
 }
 
 .container__intro::before {
