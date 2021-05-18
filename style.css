@@ -219,3 +219,57 @@ h2 {
 footer {
   padding-top: 4rem;
 }
+/*....obrazek na home strance....*/
+.image-wrapper {
+  position: relative;
+}
+.illustration {
+  display: block;
+  max-width: 140px;
+  height: auto;
+  border-radius: 10px 0 0 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 140px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.image-wrapper:hover .overlay {
+  opacity: 1;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+}
+.image-text {
+  color: rgb(7, 6, 6);
+  font-size: 1rem;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+.polaroid {
+  max-width: 140px;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  font-size: 14px;
+  text-align: justify;
+  backdrop-filter: blur(15px);
+  border-radius: 10px 0 10px 0;
+  /*  position: relative;
+  left: 80%; */
+  float: right;
+}
+.polaroid-text {
+  text-align: center;
+}
+.text-padding {
+  padding-right: 5rem;
+}
