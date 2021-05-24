@@ -24,7 +24,7 @@ body {
     rgb(197, 216, 245)
   );
   background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+  /* animation: gradient 20s ease infinite; */
   color: rgb(21, 24, 21);
 }
 /* styly pro animovane pozadi */
@@ -175,6 +175,9 @@ h2 {
 }
 
 @media screen and (min-width: 681px) {
+  body {
+    animation: gradient 20s ease infinite;
+  }
   .container {
     max-width: 960px;
   }
