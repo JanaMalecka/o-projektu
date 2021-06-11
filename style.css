@@ -202,6 +202,13 @@ h2 {
   .nav-closed {
     display: block;
   }
+  /* .illustration {
+    max-width: 240px;
+    height: auto;
+  }
+  .polaroid {
+    max-width: 240px;
+  } nefunguje? */
 }
 /* ....hamburger jen na mobilu...*/
 @media (max-width: 680px) {
